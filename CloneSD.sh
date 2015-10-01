@@ -17,7 +17,7 @@ sudo dd if=/dev/mmcblk0 bs=4M of=$File && sync
 FileStat=$(wc -c "$File" | cut -f 1 -d ' ')
 
 if [ $? -eq 0 ]; then
-        if [ $FileStat -ge $SdImgSize ]; then
+        if [ $FileStat -ne $SdImgSize ]; then
                 Objet="($DATE) SD-Backup $BoxToClone : ERREUR"
                 Message="Taille du fichier $FileName incorrecte"
         else
