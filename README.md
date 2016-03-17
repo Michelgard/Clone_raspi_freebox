@@ -18,3 +18,6 @@ sudo crontab -e
 
 Ajouter la ligne suivante puis enregistrer :
 00 9 * * 3 sh /home/user/CloneSD.sh
+
+Retrouver le bolg ici http://rasp-pi.fr.nf
+
